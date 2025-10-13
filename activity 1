@@ -1,0 +1,354 @@
+┌──(chandan㉿kali)-[~]
+└─$ ls
+Documents Downloads Music Pictures 
+Description: lists files and directories in current location 
+bash
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ pwd
+/home/darshan
+Description: Shows the current directory you are in.
+pgsql
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ ls -l
+Description: Displays detailed info (permission,owner,size,time,date)
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ ls -a 
+. .. .bashrc .profile
+Description: Lists all hidden files(.files)
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ cd Documents
+prompt changes to
+┌──(chandan㉿kali)-[/Documents]
+└─$ 
+Description: Move into another directory
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ cd ..
+Description: Move to parent directory.
+arduino
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ mkdir directory_name
+Description: Creates new directory.
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ rmdir test_dir
+Description: Deletes an empty directory.
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ rm -r directory_name
+Description: Deletes a Folder and its contents.
+php
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ touch file_name.txt
+Description: Creates a new empty file.
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ cp file.txt test.txt
+Description: Copies a file to another file in same directory.
+python
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ cp -r Documents Alpha
+Alpha Folder is created
+Description: Copies a folder with all contents.
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ mv file.txt newfile.txt
+Description: Renames the file
+bash
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ mv file.txt /home/darshan/Documents/
+Description: Move file to another Folder.
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ rm file.txt 
+Description: Deletes a file.
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ cat file.txt
+Hello World!
+Welcome to Linux
+Description: Displays file contents.
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ tac file.txt
+Welcome to linux
+Hello World!
+Description: Displays file in Reverse.
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ more file.txt
+Description: View file page by page.
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ less file.txt
+Description: Advanced file viewer.
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ head file.txt
+Line1
+Line2
+....
+Line10
+Description: Show first 10 lines of file.
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ tail file.txt
+Description: Show last 10 lines of file
+python
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ zip -9 zip_file_name file1 file2 ...
+Description: Compress file into a .zip archive .
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ unzip -d <dir> zip_file_name
+Description: Extract file into a specific directory.
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ cat file.txt
+Hello Linux 
+Welcome to kali
+Description: Concatenate and display file
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ grep -n keyword [file]
+Welcome to (Linux)
+Description: Search a text in a file.
+pgsql
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ sed -n 'subcommand/new_pattern/target_pattern' file.txt
+new pattern is changed to target pattern in a sentence
+Description: Search, find, replace, insert, or delete text in a file.
+sql
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ ping google.com
+64 bytes from del14s08-in-f14.1e100.net (142.250.183.14): icmp_seq=1 ttl=117 time=26.3 ms
+64 bytes from del14s08-in-f14.1e100.net (142.250.183.14): icmp_seq=2 ttl=117 time=25.8 ms
+64 bytes from del14s08-in-f14.1e100.net (142.250.183.14): icmp_seq=3 ttl=117 time=26.1 ms
+Description: Checks connectivity with Google's public DNS server.
+vbnet
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ sort -n file.txt
+1
+2
+3
+Description: Rearrange a file's content in a specific order.
+sql
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ cut -d ":" -f 2 file.txt
+prints only 2nd part of every line,
+Hello
+Welcome
+Linux
+Description: Pick out a specific column from each line
+markdown
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ diff -c file1.txt file2.txt
+* file1.txt   2025-08-24 18:25:00
+--- file2.txt   2025-08-24 18:25:10
+*****
+* 3 **
+- cherry
+--- 3 ----
++ grape
+Description: Compares two files and print their differences.
+bash
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ locate file.txt
+/home/darshan/Documents/files.txt
+Description: Finds file/directory very quickly by searching a prebuilt database.
+pgsql
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ find path/to/folder -type f -name "file"
+/home/darshan/Documents/file
+Description: Searches for a file within a specific directory.
+pgsql
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ sudo nano file.txt
+  GNU nano 6.2               file.txt
+Hello Linux
+This is a test file.
+Description: Superuser giving you admin permissions, to edit the file.
+python
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ sudo --help
+ -h, --help       Display this help message and exit
+ -V, --version    Display version information and exit
+ -l, --list       List user's privileges
+ -v, --validate   Update user's timestamp without running a command
+ -k, --reset-timestamp   Invalidate the user's cached credentials
+ -K, --remove-timestamp  Remove the user's cached credentials entirely
+Description: Shows a quick reference of available options .
+pgsql
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ chmod u+r file.txt
+Description: Allows the owner to read file,
+             u -> user
+             +r ->add read permission.
+vbnet
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ chmod g-w file.txt
+Description: Removes the group ability to edit,
+             g-> group
+             -w-> removes write permission.
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ chown admin-leo file.txt
+Description: Changes the ownership of files.
+pgsql
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ chown : newgroup file.txt
+Description: Make all group members the owner.
+bash
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ df 
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1       196G  6.1G  180G   4% /
+tmpfs           3.9G  1.6M  3.9G   1% /dev/shm
+Description: Show the disk space usage of mounted filesystems.
+bash
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ du /home/darshan
+4.0K    /home/user/Documents/test
+16K     /home/user/Documents
+8.0K    /home/user/Downloads
+28K     /home/user
+Description: Checks size and path of directory.
+yaml
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ top -p 1234
+top - 18:40:15 up  2:15,  1 user,  load average: 0.05, 0.07, 0.02
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  2.1 us,  0.7 sy,  0.0 ni, 97.0 id,  0.0 wa,  0.0 hi,  0.2 si
+MiB Mem :   7942.0 total,   4012.3 free,   2010.5 used,   2919.2 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   4915.2 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+ 1234 user      20   0  250M   50M   12M S   4.3  0.6   0:12.34 python3
+Description: Displays all currently running,sleeping,stopped files.
+yaml
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ htop 
+htop - 18:50:11 up  2:25,  1 user,  load average: 0.05, 0.07, 0.02
+Tasks: 196, 1 running, 195 sleeping, 0 stopped, 0 zombie
+%Cpu(s):  5.2 us,  1.0 sy,  0.0 ni, 93.6 id,  0.0 wa,  0.0 hi,  0.2 si
+MiB Mem :   7942.0 total,   2012.3 free,   3120.5 used,   2809.2 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.
+
+  PID USER      PRI  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ Command
+ 1253 root       20   0  756352  40232  22748 S   7.5  0.5   0:03.45 gnome-shell
+ 1417 user       20   0  434128  25684  18732 S   1.2  0.3   0:00.79 gnome-terminal
+  986 root       20   0  238276   8836   6272 S   0.6  0.1   0:00.32 systemd
+Description: Displays all currently running,sleeping,stopped files.
+sql
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ ps -r
+  PID TTY      STAT   TIME COMMAND
+ 1352 pts/0    R+     0:01 top
+ 1420 pts/0    R+     0:00 ps -r
+Description: Shows only running files.
+bash
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ uname -a
+Linux kali 6.5.0-kali3-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.5.8-1kali1 (2023-11-01) x86_64 GNU/Linux
+Description: It shows system information (like kernel name,version etc...).
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ sudo hostname leo
+┌──(chandan㉿kali)-[~]
+└─$ 
+Description: Temporarily change hostname to leo.
+scss
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ time ls
+Desktop  Documents  Downloads  Music  Pictures  Videos
+
+real    0m0.003s
+darshan    0m0.001s
+sys     0m0.002s
+Description: Used for performance testing.
+bash
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ watch df -h 
+Every 2.0s: df -h         Sun Aug 25 18:45:01 2025
+
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        50G   20G   27G  43% /
+tmpfs           2.0G  1.1M  2.0G   1% /run
+
+Description: Gives Monitor disk usage ,it changes every 2 sec.
+python
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ kill -9 1234
+-9 -> is type of signal
+1234 -> is process ID
+Description: The process stops immediately.
+bash
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ wget -O brave.deb https://laptop-updates.brave.com/latest/stable/amd64/brave-browser-release-stable_amd64.deb
+--2025-08-24 19:10:00--  https://laptop-updates.brave.com/latest/stable/amd64/brave-browser-release-stable_amd64.deb
+Resolving laptop-updates.brave.com (…)
+Connecting to laptop-updates.brave.com|...|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12345678 (12M) [application/x-debian-package]
+Saving to: ‘brave.deb’
+
+brave.deb            100%[===================>]  11.8M  2.0MB/s    in 6.1s
+
+2025-08-24 19:10:07 (1.9 MB/s) - ‘brave.deb’ saved [12345678/12345678]
+
+Description: Directly download Brave installer package and then install it with dpkg.
+pgsql
+Copy code
+┌──(chandan㉿kali)-[~]
+└─$ sudo shutdown 
+Description: It turn off your linux system at specific time.
